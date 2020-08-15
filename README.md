@@ -30,4 +30,8 @@ For calculating the mAP, precision, recall values the scripts can be found at th
 
 The final results (mAP, precision, recall) can be found in metrics.json.
 
+![Alt text](https://github.com/yashkhandelwal2006/Single-shot-detector/blob/master/output1.png)
+
+![Alt text](https://github.com/yashkhandelwal2006/Single-shot-detector/blob/master/output2.png)
+
 **The Final “.pb” file(final trained weights) can be found in ./workspace/training_demo/trained-inference-graphs.**
