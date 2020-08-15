@@ -2,7 +2,7 @@
 
 **STEP-1:  Data preparation**
 
-First download the annotations.csv file from [https://github.com/gulvarol/grocerydataset](https://github.com/gulvarol/grocerydataset). As it goes in the csv all the filenames with bounding boxes and class information is present for all training and testing images. Split them in two csv’s i.e. separate data for training and testing. Then convert these csv files into record files which will be the input to our tensorflow model. Also the final .record files have been removed from the from the directory as it was a large file, but just to clear things out for whoso ever sees the code it was in the below mentioned folder(which is empty right now.)
+First download the dataset and annotations.csv file from [https://github.com/gulvarol/grocerydataset](https://github.com/gulvarol/grocerydataset). As it goes in the csv all the filenames with bounding boxes and class information is present for all training and testing images. Split them in two csv’s i.e. separate data for training and testing. Then convert these csv files into record files which will be the input to our tensorflow model. Also the final .record files have been removed from the from the directory as it was a large file, but just to clear things out for whoso ever sees the code it was in the below mentioned folder(which is empty right now.)
 Path to script:   ./scripts/preprocessing/
 Path to train test csv and .record files:     ./workspace/training_demo/annotations/
 
@@ -26,5 +26,8 @@ Path to Tensorflow models: ./models
 
 For calculating the mAP, precision, recall values the scripts can be found at the path:   ./workspace/training_demo/evaluation
 
+**STEP-5:  Final Results **
+
+The final results (mAP, precision, recall) can be found in metrics.json.
 
 **The Final “.pb” file can be found in ./workspace/training_demo/trained-inference-graphs.**
