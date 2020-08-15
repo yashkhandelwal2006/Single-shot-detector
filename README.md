@@ -12,7 +12,7 @@ So for training a SSD usually it’s better to use pretrained weights(transfer l
 Path to pretrained weights:    ./workspace/training_demo/pre-trained-model/
 Path to config file used:    ./workspace/training_demo/training/*.config
 
-**STEP-3:  Training and Hyperparameters / Anchor Boxes Tuning **
+**STEP-3:  Training and Hyperparameters / Anchor Boxes Tuning**
 
 For training the model, tensorflow’s official models installation is important which contains all the necessary scripts specifically for object detection including the model specific scripts i.e. in this case for “ssd_inception_v2_coco mode”. Once installed all that, one needs to run the “model_main.py” script for starting the training process. Okay, so before starting the training process some parameters should be taken care off. 
 **_Anchors_:**   It is one of the most important parameters which needs to be tuned according to the requirement as well as incoming image data(training data) in order to get good results. This further depends on aspect ratio, scale and number of anchors used per feature map cell. For getting a better idea of what should be the values of these parameters most important is visualizing through your training data. Go through all the images and find what are the most common(ranges) aspect ratios and the scales relative to the whole image. Script for this purpose can be found at the below mentioned path. After careful investigation the final values for scale were set as 0.03 to 0.058(the values were tuned multiple times to eventually get the final values). Here 0.03 is for the default anchor layer(with aspect ratio being 1) and 0.58 is for the only layer used with aspect ratio as o.76. The idea behind this is that in the initial layers the image size(feature-map) is large enough to detect small objects, as the no. of layers increases small features are no longer prominent and that’s why it is preferred for larger objects.      
@@ -22,11 +22,11 @@ All these changes can be found in the config file for which the path is given ab
 Path to estimate optimal anchor values: ./scripts/preprocessing/
 Path to Tensorflow models: ./models
 
-**STEP-4:  Evaluation Scripts **
+**STEP-4:  Evaluation Scripts**
 
 For calculating the mAP, precision, recall values the scripts can be found at the path:   ./workspace/training_demo/evaluation
 
-**STEP-5:  Final Results **
+**STEP-5:  Final Results**
 
 The final results (mAP, precision, recall) can be found in metrics.json.
 
