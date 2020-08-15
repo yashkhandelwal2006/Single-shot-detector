@@ -30,4 +30,4 @@ For calculating the mAP, precision, recall values the scripts can be found at th
 
 The final results (mAP, precision, recall) can be found in metrics.json.
 
-**The Final “.pb” file can be found in ./workspace/training_demo/trained-inference-graphs.**
+**The Final “.pb” file(final trained weights) can be found in ./workspace/training_demo/trained-inference-graphs.**
