@@ -1,0 +1,14 @@
+tensorboard==1.14.0
+tensorflow==1.14.0
+tensorflow-estimator==1.14.0
+lxml==4.5.0
+tf-slim @ git+https://github.com/google-research/tf-slim.git@8f0215e924996d7287392241bc8d8b1133d0c5ca
+Pillow==6.2.2
+jupyter-client==6.1.3
+jupyter-core==4.6.3
+jupyterlab==2.1.4
+jupyterlab-server==1.1.5
+matplotlib==3.2.1
+opencv-python==4.3.0.36
+numpy==1.17.4
+pandas==1.0.3
